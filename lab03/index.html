@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="mn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Лаборатори 03: CSS Form</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <div class="container">
+
+            <h1 class="main-title">
+                Оюутны Бүртгэлийн Портал
+            </h1>
+
+            <nav class="navigation">
+                <a href="../index.html">Нүүр</a>
+                <a href="../lab02/index.html">Lab 02</a>
+                <a href="#">Тусламж</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main class="container">
+
+        <section class="form-card">
+
+            <span class="badge">LAB 03</span>
+
+            <h2 class="section-title">
+                Хэрэглэгчийн Анкет
+            </h2>
+
+            <p class="description">
+                Доорх формын дагуу мэдээллээ бүрэн бөглөнө үү.
+            </p>
+
+
+            <form action="#" method="POST" enctype="multipart/form-data">
+
+
+                <fieldset class="form-section">
+
+                    <legend>Хувийн мэдээлэл</legend>
+
+
+                    <div class="form-group">
+
+                        <label for="fullname">
+                            Овог нэр
+                        </label>
+
+                        <input
+                            type="text"
+                            id="fullname"
+                            name="fullname"
+                            placeholder="И. Болдбаатар"
+                            required
+                            minlength="2"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Цахим хаяг
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="example@gmail.com"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="password">
+                            Нууц үг
+                        </label>
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            minlength="6"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Утасны дугаар
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="88112233"
+                            pattern="[0-9]{8}"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="dob">
+                            Төрсөн огноо
+                        </label>
+
+                        <input
+                            type="date"
+                            id="dob"
+                            name="dob"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Хүйс</label>
+
+                        <div class="choice-group">
+
+                            <input
+                                type="radio"
+                                id="male"
+                                name="gender"
+                                value="male"
+                            >
+
+                            <label for="male">
+                                Эрэгтэй
+                            </label>
+
+
+                            <input
+                                type="radio"
+                                id="female"
+                                name="gender"
+                                value="female"
+                            >
+
+                            <label for="female">
+                                Эмэгтэй
+                            </label>
+
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+
+                <fieldset class="form-section">
+
+                    <legend>
+                        Боловсрол ба Сонирхол
+                    </legend>
+
+
+                    <div class="form-group">
+
+                        <label for="degree">
+                            Суралцаж буй түвшин
+                        </label>
+
+                        <select
+                            id="degree"
+                            name="degree"
+                            required
+                        >
+
+                            <option value="">
+                                -- Сонгоно уу --
+                            </option>
+
+                            <option value="bachelor">
+                                Бакалавр
+                            </option>
+
+                            <option value="master">
+                                Магистр
+                            </option>
+
+                            <option value="doctor">
+                                Докторант
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Сонирхож буй технологиуд
+                        </label>
+
+                        <div class="checkbox-group">
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="skills"
+                                    value="HTML"
+                                >
+                                HTML / CSS
+                            </label>
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="skills"
+                                    value="JavaScript"
+                                >
+                                JavaScript
+                            </label>
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="skills"
+                                    value="Python"
+                                >
+                                Python
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="avatar">
+                            Профайл зураг
+                        </label>
+
+                        <input
+                            type="file"
+                            id="avatar"
+                            name="avatar"
+                            accept="image/*"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="bio">
+                            Өөрийн тухай
+                        </label>
+
+                        <textarea
+                            id="bio"
+                            name="bio"
+                            rows="5"
+                            placeholder="Өөрийн тухай товч бичнэ үү..."
+                        ></textarea>
+
+                    </div>
+
+                </fieldset>
+
+
+                <div class="button-group">
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary"
+                    >
+                        Анкет Илгээх
+                    </button>
+
+                    <button
+                        type="reset"
+                        class="btn btn-secondary"
+                    >
+                        Дахин эхлүүлэх
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <p>
+            &copy; 2026 Веб зохиомж хичээл
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
