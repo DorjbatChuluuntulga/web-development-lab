@@ -1,4 +1,4 @@
-/* Lab 06 — design tokens / CSS custom properties */
+
 :root {
   color-scheme: light;
   --bg: #f7f6f2;
@@ -39,7 +39,6 @@ img { display: block; max-width: 100%; }
 .skip-link:focus { top: 12px; }
 :focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
 
-/* Header: responsive Flexbox */
 .site-header { border-bottom: 1px solid var(--border); background: var(--surface); }
 .header-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 0; }
 .brand { display: inline-flex; gap: 7px; align-items: center; font-size: 1.5rem; font-weight: 850; letter-spacing: -.07em; text-decoration: none; }
@@ -51,7 +50,6 @@ img { display: block; max-width: 100%; }
 .theme-toggle { background: var(--surface-alt); color: var(--text); border: 1px solid var(--border); border-radius: 99px; padding: 9px 15px; cursor: pointer; transition: transform .2s ease, background .2s ease; }
 .theme-toggle:hover, .theme-toggle:focus-visible { transform: translateY(-2px); }
 
-/* Hero */
 .hero { display: grid; grid-template-columns: minmax(0,1fr); gap: 32px; align-items: center; padding: 54px 0 64px; }
 .eyebrow { color: var(--accent-strong); font-size: .77rem; letter-spacing: .13em; font-weight: 800; }
 .hero h1 { font-size: clamp(2.7rem, 9vw, 5.6rem); line-height: 1.03; letter-spacing: -.06em; margin: 16px 0; }
@@ -63,7 +61,6 @@ img { display: block; max-width: 100%; }
 .hero-feature img { width: 100%; height: 330px; object-fit: cover; }
 .feature-label { position: absolute; bottom: 15px; right: 15px; padding: 7px 12px; color: #fff; background: rgb(18 30 28 / 77%); font-size: .7rem; border-radius: 6px; letter-spacing: .1em; }
 
-/* Gallery: CSS Grid + 3D flip */
 .gallery-section { padding: 64px 0 76px; background: var(--surface-alt); }
 .section-heading { display: flex; flex-direction: column; align-items: flex-start; justify-content: space-between; gap: 8px; margin-bottom: 28px; }
 .section-heading h2 { font-size: clamp(1.9rem,5vw,2.6rem); letter-spacing: -.04em; margin: 5px 0; }
@@ -86,7 +83,6 @@ img { display: block; max-width: 100%; }
 .flip-back small { opacity: .8; margin-top: 7px; }
 .back-number { font-size: .73rem; letter-spacing: .13em; opacity: .75; }
 
-/* HTML5 video, track and safe iframe */
 .media-section { padding: 70px 0 80px; }
 .media-grid { display: grid; grid-template-columns: minmax(0,1fr); gap: 22px; }
 .media-panel { min-width: 0; padding: 20px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); }
@@ -94,7 +90,6 @@ img { display: block; max-width: 100%; }
 .media-panel p { margin: 0 0 16px; color: var(--muted); font-size: .91rem; }
 .media-panel video, .media-panel iframe { width: 100%; aspect-ratio: 16/9; display: block; border: 0; border-radius: 10px; background: #14201f; }
 
-/* About and footer */
 .about-section { background: var(--surface-alt); padding: 48px 0; }
 .about-inner { display: grid; gap: 14px; grid-template-columns: 1fr; align-items: center; }
 .about-inner h2 { margin: 7px 0 0; }
@@ -103,7 +98,6 @@ img { display: block; max-width: 100%; }
 .footer-inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; color: var(--muted); font-size: .87rem; }
 .footer-inner a { text-decoration: none; color: var(--accent-strong); }
 
-/* Responsive layout */
 @media (min-width: 640px) {
   .nav-links { order: 0; width: auto; }
   .hero { grid-template-columns: minmax(0,1fr) minmax(0,1fr); padding: 75px 0 85px; }
@@ -116,7 +110,6 @@ img { display: block; max-width: 100%; }
   .section-heading { flex-direction: row; align-items: end; }
   .hero-feature img { height: 370px; }
 }
-/* Accessibility: respect reduced motion */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; animation-delay: 0ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
 }

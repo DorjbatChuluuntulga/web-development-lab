@@ -1,4 +1,4 @@
-// Lab 06: light/dark mode and keyboard-accessible flip buttons.
+
 const root = document.documentElement;
 const themeButton = document.querySelector('#themeToggle');
 

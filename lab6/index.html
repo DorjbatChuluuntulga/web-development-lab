@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="mn">
 <head>
@@ -8,159 +9,355 @@
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
+
 <body>
   <a class="skip-link" href="#main">Үндсэн хэсэг рүү очих</a>
 
   <header class="site-header">
     <div class="container header-inner">
+
       <a class="brand" href="#top" aria-label="Frame Gallery — Нүүр хуудас">
-        <svg class="brand-mark" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="logoTitle">
+        <svg class="brand-mark" viewBox="0 0 48 48"
+          xmlns="http://www.w3.org/2000/svg"
+          role="img" aria-labelledby="logoTitle">
+
           <title id="logoTitle">Зургийн цомгийн дүрс</title>
-          <rect x="5" y="7" width="38" height="34" rx="7" fill="none" stroke="currentColor" stroke-width="3"/>
+
+          <rect x="5" y="7" width="38" height="34" rx="7"
+            fill="none" stroke="currentColor" stroke-width="3"/>
+
           <circle cx="17" cy="18" r="4" fill="currentColor"/>
-          <path d="M9 34l10-11 7 7 5-5 8 9" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+
+          <path d="M9 34l10-11 7 7 5-5 8 9"
+            fill="none" stroke="currentColor"
+            stroke-width="3" stroke-linejoin="round"
+            stroke-linecap="round"/>
         </svg>
+
         <span>FRAME<span class="brand-accent">.</span></span>
       </a>
+
       <nav aria-label="Үндсэн цэс" class="nav-links">
         <a href="#gallery">Зургууд</a>
         <a href="#media">Видео</a>
         <a href="#about">Тухай</a>
       </nav>
-      <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false" aria-label="Харанхуй горим руу шилжих">🌙 Dark mode</button>
+
+      <button
+        class="theme-toggle"
+        id="themeToggle"
+        type="button"
+        aria-pressed="false"
+        aria-label="Харанхуй горим руу шилжих">
+        🌙 Dark mode
+      </button>
+
     </div>
   </header>
 
   <main id="main">
+
     <section class="hero container" id="top" aria-labelledby="heroTitle">
+
       <div class="hero-copy">
         <span class="eyebrow">WEB DEVELOPMENT · LAB 06</span>
+
         <h1 id="heroTitle">Зургийн <em>цомог</em></h1>
-        <p>CSS3 animation, 3D flip card болон dark mode ашигласан, бүх дэлгэцэд тохирох интерактив галерей.</p>
-        <a class="primary-link" href="#gallery">Зургуудыг үзэх <span aria-hidden="true">↗</span></a>
+
+        <p>
+          CSS3 animation, 3D flip card болон dark mode ашигласан,
+          бүх дэлгэцэд тохирох интерактив галерей.
+        </p>
+
+        <a class="primary-link" href="#gallery">
+          Зургуудыг үзэх <span aria-hidden="true">↗</span>
+        </a>
       </div>
+
       <div class="hero-feature" aria-hidden="true">
         <img src="img/photo3.jpg" alt="">
         <span class="feature-label">EXPLORE THE MOMENTS</span>
       </div>
+
     </section>
 
-    <section class="gallery-section" id="gallery" aria-labelledby="galleryTitle">
+    <section class="gallery-section" id="gallery"
+      aria-labelledby="galleryTitle">
+
       <div class="container">
+
         <div class="section-heading">
           <div>
             <span class="eyebrow">01 / GALLERY</span>
             <h2 id="galleryTitle">Онцлох зургууд</h2>
           </div>
-          <p>Картан дээр дарж эсвэл Tab → Enter ашиглаж эргүүлээрэй.</p>
+
+          <p>
+            Картан дээр дарж эсвэл Tab → Enter ашиглаж эргүүлээрэй.
+          </p>
         </div>
 
         <div class="gallery-grid">
+
           <article class="gallery-item" style="--i: 0">
-            <button class="flip-card" type="button" aria-pressed="false" aria-label="Өглөөний кофе зургийн тайлбарыг харах">
+            <button class="flip-card" type="button"
+              aria-pressed="false"
+              aria-label="Өглөөний кофе зургийн тайлбарыг харах">
+
               <span class="flip-card-inner">
-                <span class="flip-face flip-front"><img src="img/photo1.jpg" alt="Аяган дахь кофе ба кофены үр" loading="lazy"><span class="photo-label">01 — Кофе</span></span>
-                <span class="flip-face flip-back"><span class="back-number">01 / 06</span><strong>Кофе</strong><span></span><small>Дахин дарж буцаана ↶</small></span>
+
+                <span class="flip-face flip-front">
+                  <img src="img/photo1.jpg"
+                    alt="Аяган дахь кофе ба кофены үр"
+                    loading="lazy">
+
+                  <span class="photo-label">01 — Кофе</span>
+                </span>
+
+                <span class="flip-face flip-back">
+                  <span class="back-number">01 / 06</span>
+                  <strong>Кофе</strong>
+                  <span></span>
+                  <small>Дахин дарж буцаана ↶</small>
+                </span>
+
               </span>
             </button>
           </article>
+
           <article class="gallery-item" style="--i: 1">
-            <button class="flip-card" type="button" aria-pressed="false" aria-label="Муур зургийн тайлбарыг харах">
+            <button class="flip-card" type="button"
+              aria-pressed="false"
+              aria-label="Муур зургийн тайлбарыг харах">
+
               <span class="flip-card-inner">
-                <span class="flip-face flip-front"><img src="img/photo2.jpg" alt="Өвсөн дээр хэвтэж буй муур" loading="lazy"><span class="photo-label">02 — Муур</span></span>
-                <span class="flip-face flip-back"><span class="back-number">02 / 06</span><strong>Муур</strong><span></span><small>Дахин дарж буцаана ↶</small></span>
+
+                <span class="flip-face flip-front">
+                  <img src="img/photo2.jpg"
+                    alt="Өвсөн дээр хэвтэж буй муур"
+                    loading="lazy">
+
+                  <span class="photo-label">02 — Муур</span>
+                </span>
+
+                <span class="flip-face flip-back">
+                  <span class="back-number">02 / 06</span>
+                  <strong>Муур</strong>
+                  <span></span>
+                  <small>Дахин дарж буцаана ↶</small>
+                </span>
+
               </span>
             </button>
           </article>
           <article class="gallery-item" style="--i: 2">
-            <button class="flip-card" type="button" aria-pressed="false" aria-label="Сансрын нисэгч зургийн тайлбарыг харах">
+            <button class="flip-card" type="button"
+              aria-pressed="false"
+              aria-label="Сансрын нисэгч зургийн тайлбарыг харах">
+
               <span class="flip-card-inner">
-                <span class="flip-face flip-front"><img src="img/photo3.jpg" alt="Сансрын нисэгчийн хөрөг" loading="lazy"><span class="photo-label">03 — Гүррагчаа</span></span>
-                <span class="flip-face flip-back"><span class="back-number">03 / 06</span><strong>Гүррагчаа</strong><span></span><small>Дахин дарж буцаана ↶</small></span>
+
+                <span class="flip-face flip-front">
+                  <img src="img/photo3.jpg"
+                    alt="Сансрын нисэгчийн хөрөг"
+                    loading="lazy">
+
+                  <span class="photo-label">03 — Гүррагчаа</span>
+                </span>
+
+                <span class="flip-face flip-back">
+                  <span class="back-number">03 / 06</span>
+                  <strong>Гүррагчаа</strong>
+                  <span></span>
+                  <small>Дахин дарж буцаана ↶</small>
+                </span>
+
               </span>
             </button>
           </article>
+
           <article class="gallery-item" style="--i: 3">
-            <button class="flip-card" type="button" aria-pressed="false" aria-label="Пуужин зургийн тайлбарыг харах">
+            <button class="flip-card" type="button"
+              aria-pressed="false"
+              aria-label="Пуужин зургийн тайлбарыг харах">
+
               <span class="flip-card-inner">
-                <span class="flip-face flip-front"><img src="img/photo4.jpg" alt="Пуужингийн туршилтын дүр зураг" loading="lazy"><span class="photo-label">04 — Пуужин</span></span>
-                <span class="flip-face flip-back"><span class="back-number">04 / 06</span><strong>Пуужин</strong><span></span><small>Дахин дарж буцаана ↶</small></span>
+
+                <span class="flip-face flip-front">
+                  <img src="img/photo4.jpg"
+                    alt="Пуужингийн туршилтын дүр зураг"
+                    loading="lazy">
+
+                  <span class="photo-label">04 — Пуужин</span>
+                </span>
+
+                <span class="flip-face flip-back">
+                  <span class="back-number">04 / 06</span>
+                  <strong>Пуужин</strong>
+                  <span></span>
+                  <small>Дахин дарж буцаана ↶</small>
+                </span>
+
               </span>
             </button>
           </article>
+
           <article class="gallery-item" style="--i: 4">
-            <button class="flip-card" type="button" aria-pressed="false" aria-label="Огторгуй зургийн тайлбарыг харах">
+            <button class="flip-card" type="button"
+              aria-pressed="false"
+              aria-label="Огторгуй зургийн тайлбарыг харах">
+
               <span class="flip-card-inner">
-                <span class="flip-face flip-front"><img src="img/photo5.jpg" alt="Алс холын олон од, галактикууд" loading="lazy"><span class="photo-label">05 — Огторгуй</span></span>
-                <span class="flip-face flip-back"><span class="back-number">05 / 06</span><strong>Гүн огторгуй</strong><span></span><small>Дахин дарж буцаана ↶</small></span>
+
+                <span class="flip-face flip-front">
+                  <img src="img/photo5.jpg"
+                    alt="Алс холын олон од, галактикууд"
+                    loading="lazy">
+
+                  <span class="photo-label">05 — Огторгуй</span>
+                </span>
+
+                <span class="flip-face flip-back">
+                  <span class="back-number">05 / 06</span>
+                  <strong>Гүн огторгуй</strong>
+                  <span></span>
+                  <small>Дахин дарж буцаана ↶</small>
+                </span>
+
               </span>
             </button>
           </article>
-<article class="gallery-item" style="--i: 5">
-  <button
-    class="flip-card"
-    type="button"
-    aria-pressed="false"
-    aria-label="Хар цагаан гэрэл зургийн тайлбарыг харах"
-  >
-    <span class="flip-card-inner">
 
-      <!-- Урд тал -->
-      <span class="flip-face flip-front">
-        <img
-          src="img/photo6.jpg"
-          alt="Хар цагаан хүний хөрөг зураг"
-          loading="lazy"
-        >
-        <span class="photo-label">
-          06 — Хар цагаан гэрэл зураг
-        </span>
-      </span>
+          <article class="gallery-item" style="--i: 5">
+            <button class="flip-card" type="button"
+              aria-pressed="false"
+              aria-label="Хар цагаан гэрэл зургийн тайлбарыг харах">
 
-      <!-- Ар тал -->
-      <span class="flip-face flip-back">
-        <span class="back-number">06 / 06</span>
-        <strong>Хар цагаан гэрэл зураг</strong>
-        <span></span>
-        <small>Дахин дарж буцаана ↶</small>
-      </span>
+              <span class="flip-card-inner">
 
-    </span>
-  </button>
-    </article>
+                <span class="flip-face flip-front">
+                  <img src="img/photo6.jpg"
+                    alt="Хар цагаан хүний хөрөг зураг"
+                    loading="lazy">
+
+                  <span class="photo-label">
+                    06 — Хар цагаан гэрэл зураг
+                  </span>
+                </span>
+
+                <span class="flip-face flip-back">
+                  <span class="back-number">06 / 06</span>
+                  <strong>Хар цагаан гэрэл зураг</strong>
+                  <span></span>
+                  <small>Дахин дарж буцаана ↶</small>
+                </span>
+
+              </span>
+            </button>
+          </article>
+
         </div>
       </div>
     </section>
 
-    <section class="media-section container" id="media" aria-labelledby="mediaTitle">
-      <div class="section-heading"><div><span class="eyebrow">02 / MULTIMEDIA</span><h2 id="mediaTitle">Видео хэсэг</h2></div></div>
+    <section class="media-section container" id="media"
+      aria-labelledby="mediaTitle">
+
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">02 / MULTIMEDIA</span>
+          <h2 id="mediaTitle">Видео хэсэг</h2>
+        </div>
+      </div>
+
       <div class="media-grid">
+
+        <!-- VIDEO 1: MP4 + English Subtitle -->
         <div class="media-panel">
-          <h3>Богино танилцуулга</h3>
-          <p>Дотоод видео файл ба Монгол хадмал (.vtt).</p>
-          <video controls playsinline preload="metadata" poster="img/photo5.jpg">
-            <source src="video/clip.webm" type="video/webm">
-            <source src="video/clip.mp4" type="video/mp4">
-            <track kind="captions" src="video/clip.mn.vtt" srclang="mn" label="Монгол хадмал" default>
-            Таны браузер video тоглуулах боломжгүй байна.
+
+          <h3>Sintel (2010)</h3>
+          <p>Богино хэмжээний видео · English subtitle</p>
+
+          <video
+            controls
+            playsinline
+            preload="metadata"
+            poster="img/photo5.jpg">
+
+            <source
+              src="video/sintel-clip.mp4"
+              type="video/mp4">
+
+            <track
+              kind="subtitles"
+              src="video/sintel-clip.en.vtt"
+              srclang="en"
+              label="English"
+              default>
+
+            Таны браузер видео тоглуулах боломжгүй байна.
           </video>
+
+          <p>Blender Foundation — CC BY 3.0</p>
+
         </div>
+
+        <!-- VIDEO 2: YOUTUBE EMBED -->
         <div class="media-panel">
-          <h3>Нэмэлт видео</h3>
-          <p>Нууцлалд чиглэсэн YouTube iframe (интернэт шаардлагатай).</p>
-          <iframe src="https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ" title="Big Buck Bunny — нээлттэй богино хэмжээний хүүхэлдэйн кино" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+          <h3>YouTube видео</h3>
+          <p>YouTube embedded video.</p>
+
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/AS95dkiWkfk"
+            title="YouTube видео"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+
         </div>
+
       </div>
     </section>
 
-    <section class="about-section" id="about" aria-labelledby="aboutTitle">
+    <section class="about-section" id="about"
+      aria-labelledby="aboutTitle">
+
       <div class="container about-inner">
-        <div><span class="eyebrow">03 / ABOUT</span><h2 id="aboutTitle">Lab 06 — CSS3</h2></div>
-        <p>Энэ хуудсанд <strong>transition, transform, perspective, preserve-3d, backface-visibility, @keyframes, animation-delay, CSS custom properties</strong> болон <strong>prefers-reduced-motion</strong> ашигласан.</p>
+
+        <div>
+          <span class="eyebrow">03 / ABOUT</span>
+          <h2 id="aboutTitle">Lab 06 — CSS3</h2>
+        </div>
+
+        <p>
+          Энэ хуудсанд
+          <strong>
+            transition, transform, perspective, preserve-3d,
+            backface-visibility, @keyframes, animation-delay,
+            CSS custom properties
+          </strong>
+          болон
+          <strong>prefers-reduced-motion</strong>
+          ашигласан.
+        </p>
+
       </div>
     </section>
+
   </main>
 
-  <footer class="site-footer"><div class="container footer-inner"><span>© 2026 · Web Development Lab 06</span><a href="#top">Дээш очих ↑</a></div></footer>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+
+      <span>© 2026 · Web Development Lab 06</span>
+
+      <a href="#top">Дээш очих ↑</a>
+
+    </div>
+  </footer>
+
 </body>
 </html>
