@@ -1,0 +1,25 @@
+@use "../abstracts/functions" as fn;
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button { font: inherit; }
+a { color: inherit; }
+img { display: block; max-width: 100%; }
+.container { width: min(calc(100% - 32px), var(--container)); margin: 0 auto; }
+.skip-link { position: absolute; left: 12px; top: -80px; padding: 10px 14px; background: var(--surface); color: var(--text); z-index: 100; &:focus { top: 12px; } }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+.eyebrow { color: var(--accent-strong); font-size: fn.rem(12.32); letter-spacing: .13em; font-weight: 800; }
+.section-heading {
+  display: flex; flex-direction: column; align-items: flex-start; justify-content: space-between; gap: 8px; margin-bottom: 28px;
+  h2 { font-size: clamp(1.9rem, 5vw, 2.6rem); letter-spacing: -.04em; margin: 5px 0; }
+  p { color: var(--muted); max-width: 390px; margin: 0; font-size: .92rem; }
+}
+.primary-link {
+  display: inline-flex; align-items: center; gap: 15px; margin-top: 17px;
+  background: #205d54; color: fn.contrast(#205d54); padding: 13px 21px;
+  border-radius: var(--radius-pill); text-decoration: none; font-weight: 700;
+  transition: transform var(--duration-hover) ease, background var(--duration-hover) ease;
+  &:hover, &:focus-visible { transform: translateY(-4px); background: #174941; }
+}

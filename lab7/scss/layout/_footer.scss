@@ -1,0 +1,8 @@
+.site-footer {
+  padding: 23px 0;
+  &__inner {
+    display: flex; flex-wrap: wrap; justify-content: space-between;
+    gap: 12px; color: var(--muted); font-size: .87rem;
+    a { text-decoration: none; color: var(--accent-strong); }
+  }
+}

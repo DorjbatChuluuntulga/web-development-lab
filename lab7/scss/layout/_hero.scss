@@ -1,0 +1,21 @@
+@use "../abstracts/mixins" as mx;
+
+.hero {
+  display: grid; grid-template-columns: minmax(0, 1fr); gap: 32px;
+  align-items: center; padding: 54px 0 64px;
+  h1 { font-size: clamp(2.7rem, 9vw, 5.6rem); line-height: 1.03; letter-spacing: -.06em; margin: 16px 0;
+    em { color: var(--accent-strong); font-style: normal; }
+  }
+  p { color: var(--muted); max-width: 500px; font-size: 1.05rem; }
+  &__feature {
+    position: relative; overflow: hidden; min-height: 240px; border-radius: var(--radius); box-shadow: var(--shadow);
+    img { width: 100%; height: 330px; object-fit: cover; }
+  }
+  &__feature-label {
+    position: absolute; bottom: 15px; right: 15px; padding: 7px 12px;
+    color: #fff; background: rgb(18 30 28 / 77%); font-size: .7rem;
+    border-radius: var(--radius-tiny); letter-spacing: .1em;
+  }
+  @include mx.respond(tablet) { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); padding: 75px 0 85px; }
+  @include mx.respond(desktop) { &__feature img { height: 370px; } }
+}

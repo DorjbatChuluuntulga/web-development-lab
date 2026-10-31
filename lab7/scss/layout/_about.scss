@@ -1,0 +1,11 @@
+@use "../abstracts/mixins" as mx;
+
+.about {
+  background: var(--surface-alt); padding: 48px 0;
+  &__inner {
+    display: grid; gap: 14px; grid-template-columns: 1fr; align-items: center;
+    h2 { margin: 7px 0 0; }
+    p { color: var(--muted); margin: 0; }
+  }
+  @include mx.respond(tablet) { &__inner { grid-template-columns: 1fr 2fr; } }
+}

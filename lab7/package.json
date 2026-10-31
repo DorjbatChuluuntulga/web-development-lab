@@ -1,0 +1,14 @@
+{
+  "name": "web-development-lab-07",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Lab 07 - Sass/SCSS refactoring of Lab 06 gallery",
+  "scripts": {
+    "dev": "sass --watch --no-source-map scss/main.scss:css/style.css",
+    "build": "sass --no-source-map --style=compressed scss/main.scss css/style.css",
+    "build:expanded": "sass --no-source-map --style=expanded scss/main.scss css/style.css"
+  },
+  "devDependencies": {
+    "sass": "^1.107.0"
+  }
+}

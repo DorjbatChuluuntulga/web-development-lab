@@ -1,0 +1,47 @@
+@use "sass:map";
+
+$colors: (
+  "bg": #f7f6f2,
+  "surface": #ffffff,
+  "surface-alt": #eeede7,
+  "text": #202421,
+  "muted": #666e69,
+  "accent": #307e72,
+  "accent-strong": #205d54,
+  "border": #dedfd9,
+  "shadow": 0 12px 32px rgb(13 30 25 / 9%)
+);
+
+$dark-colors: (
+  "bg": #121a19,
+  "surface": #1d2826,
+  "surface-alt": #263331,
+  "text": #f3f7f3,
+  "muted": #abbcb6,
+  "accent": #91d8c5,
+  "accent-strong": #b7eee0,
+  "border": #354440,
+  "shadow": 0 12px 32px rgb(0 0 0 / 25%)
+);
+
+$radii: ("card": 18px, "media": 10px, "pill": 50px, "round": 99px, "tiny": 6px);
+$breakpoints: ("tablet": 640px, "desktop": 1024px);
+$durations: ("fast": 200ms, "hover": 250ms, "scale": 450ms, "flip": 800ms, "enter": 650ms, "stagger": 110ms);
+$spaces: ("0": 0, "1": 4px, "2": 8px, "3": 12px, "4": 16px, "5": 20px, "6": 24px);
+$container: 1120px;
+
+:root {
+  color-scheme: light;
+  @each $name, $value in $colors { --#{$name}: #{$value}; }
+  @each $name, $value in $radii { --radius-#{$name}: #{$value}; }
+  @each $name, $value in $durations { --duration-#{$name}: #{$value}; }
+  @each $name, $value in $breakpoints { --breakpoint-#{$name}: #{$value}; }
+  --radius: #{map.get($radii, "card")};
+  --container: #{$container};
+  --stagger-step: #{map.get($durations, "stagger")};
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  @each $name, $value in $dark-colors { --#{$name}: #{$value}; }
+}

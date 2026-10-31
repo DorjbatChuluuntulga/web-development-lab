@@ -1,0 +1,14 @@
+@use "../abstracts/mixins" as mx;
+
+.gallery {
+  padding: 64px 0 76px; background: var(--surface-alt);
+  &__grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
+  &__item {
+    min-width: 0; animation: rise-in var(--duration-enter) both;
+    animation-delay: calc(var(--i, 0) * var(--stagger-step));
+  }
+  @include mx.respond(tablet) { &__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @include mx.respond(desktop) { &__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+}
+@keyframes rise-in { from { opacity: 0; transform: translateY(26px); } to { opacity: 1; transform: translateY(0); } }
+@include mx.respond(desktop) { .section-heading { flex-direction: row; align-items: end; } }

@@ -1,0 +1,11 @@
+@use "../abstracts/tokens";
+
+@each $name, $space in tokens.$spaces {
+  .u-mt-#{$name} { margin-top: $space !important; }
+  .u-mb-#{$name} { margin-bottom: $space !important; }
+  .u-p-#{$name} { padding: $space !important; }
+}
+
+@each $name, $radius in tokens.$radii {
+  .u-radius-#{$name} { border-radius: $radius !important; }
+}
